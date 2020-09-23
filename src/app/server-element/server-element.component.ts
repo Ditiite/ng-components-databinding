@@ -39,47 +39,47 @@ export class ServerElementComponent implements
   @ContentChild('contentParagraph') paragraph: ElementRef;
 
   constructor() {
-    console.log('constructor call');
+    // console.log('constructor call');
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('ngOnChanges call');
-    console.log('changes: ', changes)
+    //console.log('ngOnChanges call');
+    //console.log('changes: ', changes)
   }
 
   ngOnInit(): void {
-    console.log('ngOnInit call');
-    console.log('Text content', this.header.nativeElement.textContent);
-    console.log('Text content of paragraph: ', this.paragraph.nativeElement.textContent);
+    //console.log('ngOnInit call');
+    //console.log('Text content', this.header.nativeElement.textContent);
+    //console.log('Text content of paragraph: ', this.paragraph.nativeElement.textContent);
   }
 
   // Get called with every call
   ngDoCheck() {
-    console.log('ngDoCheck call!');
+    //console.log('ngDoCheck call!');
   }
 
   // Gets called only once
   ngAfterContentInit(){
-    console.log('ngAfterContentInit call!');
-    console.log('Text content of paragraph: ', this.paragraph.nativeElement.textContent);
+    //console.log('ngAfterContentInit call!');
+    //console.log('Text content of paragraph: ', this.paragraph.nativeElement.textContent);
   }
 
   // Get called after every change detection cycle
   ngAfterContentChecked(){
-    console.log('ngAfterContentChecked call!');
+    //console.log('ngAfterContentChecked call!');
   }
 
   // Get access to template elements
   ngAfterViewInit(){
-    console.log('ngAfterViewInit call!');
-    console.log('Text content', this.header.nativeElement.textContent)
+    //console.log('ngAfterViewInit call!');
+    //console.log('Text content', this.header.nativeElement.textContent)
   }
 
   ngAfterViewChecked(){
-    console.log('ngAfterViewChecked call!');
+    //console.log('ngAfterViewChecked call!');
   }
 
   ngOnDestroy(){
-    console.log('ngOnDestroy call!');
+    //console.log('ngOnDestroy call!');
   }
 }
