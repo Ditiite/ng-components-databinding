@@ -1,9 +1,18 @@
 <div class="panel panel-default">
-    <div class="panel-heading">{{ element.name }}</div>
+    <!-- <div class="panel-heading">{{ element.name }}</div> -->
+    <div class="panel-heading" #heading>{{ name }}</div>
     <div class="panel-body">
-        <p>
-            <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
-            <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
-        </p>
+        <!-- 
+            <p>
+                <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
+                <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
+            </p>
+         -->
+        <!-- Place where I want to render the content can add ng-content. 
+            Angular should render any content what it finds in other component
+            between opeening add closing tag 
+            example between <app-server-element> in app.component.html 
+        -->
+        <ng-content></ng-content>
     </div>
 </div>
